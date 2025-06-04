@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>이미지 생성 - 청동거울</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/upload.css">
+</head>
+<body>
+
+  <div class="animated-bg">
+    <div class="blob"></div>
+    <div class="blob delay"></div>
+  </div>
+
+  <!-- ✅ 공통 상단바 -->
+  <nav class="navbar">
+    <div class="logo">청동거울</div>
+    <ul class="nav-menu">
+      <li><a href="upload.html">이미지 생성</a></li>
+      <li><a href="board.html">게시판</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="#">로그인/아웃</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ 콘텐츠 -->
+  <main class="upload-layout">
+    <!-- 왼쪽: 이미지 입력 -->
+    <section class="upload-left">
+      <h2 class="img-box-title">이미지를 등록하세요!</h2>
+
+      <!-- 미리보기 박스 (업로드한 이미지 표시) -->
+      <div class="preview-box">
+        <img id="input-image" />
+      </div>
+
+      <!-- 파일 첨부 영역 -->
+      <div class="upload-box">
+        <input type="text" id="filename" placeholder="선택된 파일 없음" readonly>
+        <label for="file-input" class="file-button">이미지 첨부</label>
+        <input type="file" id="file-input" accept="image/*" hidden>
+      </div>
+
+      <!-- 생성 버튼 -->
+      <button class="generate-button">이미지 생성</button>
+    </section>
+
+    <!-- 오른쪽: 생성된 결과 출력 -->
+    <section class="upload-right">
+      <h2 class="img-box-title">변환된 이미지를 확인하세요!</h2>
+      <div class="result-box" id="preview-container">
+        <img id="output-image" src="" />
+      </div>
+
+      <!-- ✅ 여기에 공간용 dummy div 추가 -->
+      <div class="upload-box hidden-placeholder"></div>
+
+      <!-- 저장 버튼 -->
+      <button class="generate-button">컬렉션 등록</button>
+    </section>
+  </main>
+
+  <script src="js/upload.js"></script>
+</body>
+</html>

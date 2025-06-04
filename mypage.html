@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>마이페이지 - 청동거울</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/mypage.css" />
+</head>
+<body>
+
+  <!-- 💫 배경 이펙트 -->
+  <div class="animated-bg">
+    <div class="blob"></div>
+    <div class="blob delay"></div>
+  </div>
+
+  <!-- ✅ 공통 상단바 -->
+  <nav class="navbar">
+    <div class="logo">청동거울</div>
+    <ul class="nav-menu">
+      <li><a href="upload.html">이미지 생성</a></li>
+      <li><a href="board.html">게시판</a></li>
+      <li><a href="mypage.html">마이페이지</a></li>
+      <li><a href="#">로그인/아웃</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ 콘텐츠 -->
+  <main class="mypage-container">
+    <section class="user-info">
+      <div class="avatar-large"></div>
+      <div class="user-meta">
+        <h2><span id="nickname">하빈</span>님, 반가워요!</h2>
+      </div>
+      <!-- ✅ 수정/탈퇴 버튼 -->
+      <div class="user-actions">
+        <button id="editBtn">회원정보 수정</button>
+        <button id="deleteBtn">회원 탈퇴</button>
+      </div>
+    </section>
+
+    <section class="my-gallery">
+      <div class="gallery-header">
+        <h2>청동거울이 바라본 나를 확인하세요</h2>
+      </div>
+      <div class="gallery">    
+        <!-- 카드 예시 (더미) -->
+        <div class="card">
+          <img src="assets/images/sample1.png" alt="내 이미지" />
+          <div class="card-info">
+            <div class="avatar"></div>
+            <div class="meta">
+              <strong>하빈</strong>
+              <span>10분 전</span>
+            </div>
+            <button class="delete-card-btn">삭제</button> <!-- ✅ 삭제 버튼 -->
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/sample1.png" alt="내 이미지" />
+          <div class="card-info">
+            <div class="avatar"></div>
+            <div class="meta">
+              <strong>하빈</strong>
+              <span>10분 전</span>
+            </div>
+            <button class="delete-card-btn">삭제</button> <!-- ✅ 삭제 버튼 -->
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="assets/images/sample1.png" alt="내 이미지" />
+          <div class="card-info">
+            <div class="avatar"></div>
+            <div class="meta">
+              <strong>하빈</strong>
+              <span>10분 전</span>
+            </div>
+            <button class="delete-card-btn">삭제</button> <!-- ✅ 삭제 버튼 -->
+          </div>
+        </div>
+        <!-- 더 많은 카드가 JS로 들어올 수 있음 -->
+      </div>
+    </section>
+  </main>
+
+  <script src="js/mypage.js"></script>
+</body>
+</html>
