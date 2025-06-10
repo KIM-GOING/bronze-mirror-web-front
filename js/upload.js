@@ -1,3 +1,5 @@
+import { bindLogoutButton } from "./global.js";
+
 const fileInput = document.getElementById("file-input");
 const filenameField = document.getElementById("filename");
 const inputImage = document.getElementById("input-image");
@@ -5,6 +7,10 @@ const outputImage = document.getElementById("output-image");
 const generateButton = document.querySelector(".generate-button");
 
 let uploadedImageUrl = ""; // 서버에 저장된 이미지 URL
+
+document.addEventListener("DOMContentLoaded", () => {
+  bindLogoutButton();
+});
 
 // 1. 업로드 → 왼쪽 프리뷰 & 서버 업로드드
 fileInput.addEventListener("change", async () => {

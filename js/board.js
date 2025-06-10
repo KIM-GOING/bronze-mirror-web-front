@@ -1,4 +1,8 @@
+import { bindLogoutButton } from "./global.js";
+
 document.addEventListener("DOMContentLoaded", async () => {
+  bindLogoutButton();
+
   const gallery = document.getElementById("gallery");
   
   // JWT 토큰 가져오기
