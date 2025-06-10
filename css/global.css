@@ -15,7 +15,7 @@ body {
 
 /* 상단바 스타일 */
 .navbar {
-  background-color: #183b35;
+  background-color: #1a1947;
   padding: 16px 32px;
   display: flex;
   justify-content: space-between;
@@ -41,7 +41,7 @@ body {
 
 .nav-menu li a {
   text-decoration: none;
-  color: #d8f3ec;
+  color: #ececff;
   font-weight: 500;
   padding: 8px 14px;
   border-radius: 6px;
@@ -49,5 +49,5 @@ body {
 }
 
 .nav-menu li a:hover {
-  background-color: #295e54;
+  background-color: #25235e;
 }

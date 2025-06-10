@@ -20,7 +20,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #6fb9aa 0%, #0f2c27 100%);
+  background: radial-gradient(circle, #515aff 0%, #25235e 100%);
   opacity: 0.2;
   filter: blur(100px);
   animation: float 20s infinite alternate ease-in-out;
@@ -53,7 +53,7 @@
 
 .board-container h2 {
   font-family: '국립박물관문화재단클래식B', sans-serif;
-  color: #183b35;
+  color: #25235e;
   font-size: 22px;
   margin-bottom: 32px;
 }
@@ -71,7 +71,7 @@
 
 /* 카드 */
 .card {
-  background-color: #f1f4f3;
+  background-color: #efeff0;
   width: 320px;
   height: 300px; /* ✅ 전체 카드 높이 고정 또는 min-height 설정 */
   border-radius: 16px;
@@ -121,7 +121,7 @@
 }
 
 .meta strong {
-  color: #183b35;
+  color: #25235e;
   font-size: 15px;
   line-height: 1.2;
 }

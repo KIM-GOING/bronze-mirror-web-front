@@ -13,7 +13,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #6fb9aa 0%, #0f2c27 100%);
+  background: radial-gradient(circle, #515aff 0%, #25235e 100%);
   opacity: 0.2;
   filter: blur(100px);
   animation: float 20s infinite alternate ease-in-out;
@@ -57,7 +57,7 @@
 ================================== */
 .upload-left,
 .upload-right {
-  background-color: #1e3a34;
+  background-color: #1a1947;
   padding: 32px;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -91,15 +91,15 @@
 #filename {
   flex: 1;
   padding: 10px;
-  background-color: #b2d8cf;
+  background-color: #f3f3fa;
   border: none;
   border-radius: 6px;
   font-weight: bold;
-  color: #0f2c27;
+  color: #1a1947;
 }
 
 .file-button {
-  background-color: #0f2c27;
+  background-color: #4d4d7a;
   color: white;
   padding: 10px 16px;
   border-radius: 6px;
@@ -142,7 +142,7 @@
    이미지 생성 버튼
 ================================== */
 .generate-button {
-  background-color: #236d60;
+  background-color: #4d4d7a;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -154,5 +154,5 @@
 }
 
 .generate-button:hover {
-  background-color: #1e5a4f;
+  background-color: #3a3a69;
 }

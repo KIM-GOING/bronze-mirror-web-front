@@ -20,7 +20,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #6fb9aa 0%, #0f2c27 100%);
+  background: radial-gradient(circle, #515aff 0%, #25235e 100%);
   opacity: 0.2;
   filter: blur(100px);
   animation: float 20s infinite alternate ease-in-out;
@@ -59,7 +59,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  background-color: #1e3a34;
+  background-color: #25235e;
   border-radius: 16px;
   padding: 24px 32px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
@@ -94,7 +94,7 @@
 .gallery-header h2 {
   font-family: '국립박물관문화재단클래식B', sans-serif;
   font-size: 26px;
-  color: #183b35;
+  color: #25235e;
   margin-bottom: 20px;
   padding-left: 4px;
 }
@@ -111,7 +111,7 @@
 /* ✅ 카드 스타일 (게시판과 동일) */
 /* 카드 */
 .card {
-  background-color: #f1f4f3;
+  background-color: #efeff0;
   width: 320px;
   height: 300px; /* ✅ 전체 카드 높이 고정 또는 min-height 설정 */
   border-radius: 16px;
@@ -161,7 +161,7 @@
 }
 
 .meta strong {
-  color: #183b35;
+  color: #25235e;
   font-size: 15px;
   line-height: 1.2;
 }

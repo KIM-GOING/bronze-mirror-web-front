@@ -5,30 +5,41 @@
   <title>청동거울</title>
   <link rel="stylesheet" href="css/global.css" />
   <link rel="stylesheet" href="css/index.css" />
+  <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 </head>
 <body class="index-theme">
 
-  <!-- 💫 배경 이펙트 -->
-  <div class="animated-bg">
-    <div class="blob"></div>
-    <div class="blob delay"></div>
-  </div>
+<!-- 💫 배경 이펙트 -->
+<div class="animated-bg">
+  <div class="blob"></div>
+  <div class="blob delay"></div>
+</div>
 
-  <section class="main-title">
-    <div class="text-block">
-      <p class="subtitle">
-        나를 바라보는<br>
-        새로운 시선 <span class="line"></span>
-      </p>
-      <h1 class="brand-name">청동거울</h1>
-      <div class="login-wrapper">
-        <button class="kakao-login-btn">
-          <img src="assets/images/kakao-icon.png" alt="카카오 아이콘">
-          <span>카카오 로그인</span>
-        </button>
-      </div>
+<section class="main-title">
+  <div class="text-block">
+    <p class="subtitle">
+      세상에 보여줄<br>
+      새로운 나 <span class="line"></span>
+    </p>
+    <h1 class="brand-name">페르소나</h1>
+    <div class="login-wrapper">
+      <button class="kakao-login-btn" onclick="kakaoLogin()">
+        <img src="assets/images/kakao-icon.png" alt="카카오 아이콘">
+        <span>카카오 로그인</span>
+      </button>
+      <a href="board.html" class="gallery-link">다른 페르소나 보러가기</a>
     </div>
-  </section>
+  </div>
+</section>
 
+<script>
+  const KAKAO_REST_API_KEY = "45cd35d97715f20df4736f78a23e5fd5";
+  const REDIRECT_URI = "http://localhost:8080/kakao-callback.html";
+
+  function kakaoLogin() {
+    window.location.href =
+            `https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${KAKAO_REST_API_KEY}&redirect_uri=${REDIRECT_URI}`;
+  }
+</script>
 </body>
 </html>

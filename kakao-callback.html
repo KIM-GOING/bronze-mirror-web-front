@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>카카오 로그인 처리 중...</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<p>로그인 처리 중입니다...</p>
+
+<script>
+    const code = new URL(window.location.href).searchParams.get("code");
+
+    if (code) {
+        axios.get(`http://localhost:8080/api/auth/af/kakao/callback?code=${code}`)
+            .then(res => {
+                const { accessToken, userId, nickname } = res.data.data;
+
+                localStorage.setItem("accessToken", accessToken);
+                localStorage.setItem("userId", userId);
+                localStorage.setItem("nickname", nickname);
+
+                window.location.href = "board.html";
+            })
+            .catch(err => {
+                console.error("로그인 실패", err);
+                alert("로그인 실패");
+                window.location.href = "index.html";
+            });
+    } else {
+        alert("인가코드가 없습니다.");
+        window.location.href = "index.html";
+    }
+</script>
+</body>
+</html>

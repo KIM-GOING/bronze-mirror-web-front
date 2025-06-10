@@ -20,7 +20,7 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, #6fb9aa 0%, #0f2c27 100%);
+  background: radial-gradient(circle, #d3d3ff 0%, #1a1947 100%);
   opacity: 0.2;
   filter: blur(100px);
   animation: float 20s infinite alternate ease-in-out;
@@ -45,7 +45,7 @@
 }
 
 body.index-theme {
-  background-color: #1e3a34; /* 청록색 */
+  background-color: #1a1947; /* 청록색 */
   color: #fff;
 }
 
@@ -64,7 +64,7 @@ body.index-theme {
 
 .subtitle {
   font-size: 20px;
-  color: #e1eae6;
+  color: #e6e6ff;
   line-height: 1.6;
   font-weight: 400;
   text-align: left;       /* ✅ 문장 안은 왼쪽 정렬 */
@@ -85,8 +85,8 @@ body.index-theme {
 .brand-name {
   font-size: 52px;
   font-family: '국립박물관문화재단클래식B', serif;
-  color: #d8f3ec;
-  text-shadow: 2px 2px 0 #102c28;
+  color: #e6e6ff;
+  text-shadow: 2px 2px 0 #1a1947;
   text-align: center;
 }
 
@@ -122,4 +122,27 @@ body.index-theme {
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
+}
+
+.gallery-link {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 16px;
+  width: 265px;
+  border: 2px solid #ffffff;
+  border-radius: 12px; /* ✅ 카카오 로그인 버튼과 같은 둥근 직사각형 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.gallery-link:hover {
+  background-color: #ffffff;
+  color: #1a1947;
 }
