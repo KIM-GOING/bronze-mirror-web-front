@@ -131,7 +131,7 @@
   object-fit: contain;
 }
 
-/* ⛔ 안 보이지만 공간을 맞춰주는 박스 */
+/* 안 보이지만 공간을 맞춰주는 박스 */
 .hidden-placeholder {
   height: 52px; /* 업로드 입력 박스 높이만큼 */
   margin-bottom: 20px;
