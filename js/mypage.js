@@ -1,8 +1,3 @@
-// 회원정보 수정 버튼
-document.getElementById("editBtn").addEventListener("click", () => {
-  alert("🛠 회원정보 수정 모달이 열립니다. (모달 UI는 추후 구현)");
-});
-
 // 회원 탈퇴 버튼
 document.getElementById("deleteBtn").addEventListener("click", () => {
   const confirmDelete = confirm("정말 탈퇴하시겠습니까?");
